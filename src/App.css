@@ -1,0 +1,115 @@
+/* src/App.css */
+
+/* Import Cairo Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* Define IEEE Blue and White Theme Colors */
+:root {
+  --ieee-blue: #006699; /* The primary IEEE Blue shade */
+  --light-blue: #E6F3F9;
+  --selected-blue:#9ed2eb; /* Very light blue for background/accents */
+  --text-dark: #333;
+  --text-light: #fff;
+  --correct-green: #28a745;
+  --incorrect-red: #dc3545;
+}
+
+/* Global Styles */
+.App {
+  font-family: 'Cairo', sans-serif; /* Apply Cairo Font */
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-blue); /* Light Blue/White Theme Background */
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+.quiz-page-content {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--ieee-blue); /* Blue accent for IEEE theme */
+}
+
+/* Header and Score */
+.header-title {
+  color: var(--ieee-blue);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Options Grid and Buttons */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for options */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option-button {
+  font-family: 'Cairo', sans-serif; /* Ensure Cairo font on buttons */
+  padding: 15px;
+  border: 2px solid var(--ieee-blue);
+  border-radius: 8px;
+  background-color: var(--text-light);
+  color: var(--ieee-blue);
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option-button:hover:not([disabled]) {
+  background-color: var(--ieee-blue);
+  color: var(--text-light);
+}
+
+.option-button.selected {
+  background-color: var(--selected-blue);
+  border-color: var(--ieee-blue);
+  color: var(--ieee-blue);
+}
+
+/* Correct/Incorrect Feedback */
+.option-button.correct {
+  background-color: var(--correct-green);
+  color: var(--text-light);
+  border-color: var(--correct-green);
+  font-weight: bold;
+}
+
+.option-button.incorrect {
+  background-color: var(--incorrect-red);
+  color: var(--text-light);
+  border-color: var(--incorrect-red);
+  font-weight: bold;
+}
+
+.primary-button {
+    font-family: 'Cairo', sans-serif;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--ieee-blue);
+    color: var(--text-light);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover:not([disabled]) {
+    background-color: #004d73; /* Darker blue on hover */
+}
+
+.blue-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--light-blue);
+    border-left: 5px solid var(--ieee-blue);
+    font-style: italic;
+    font-size: 0.9em;
+}
