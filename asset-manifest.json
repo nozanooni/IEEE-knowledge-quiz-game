@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/IEEE-knowledge-quiz-game/static/css/main.e6450915.css",
-    "main.js": "/IEEE-knowledge-quiz-game/static/js/main.022a9ee5.js",
+    "main.css": "/IEEE-knowledge-quiz-game/static/css/main.cbc03bba.css",
+    "main.js": "/IEEE-knowledge-quiz-game/static/js/main.1b742635.js",
     "static/js/453.0df881eb.chunk.js": "/IEEE-knowledge-quiz-game/static/js/453.0df881eb.chunk.js",
     "static/media/ieee_logo.png": "/IEEE-knowledge-quiz-game/static/media/ieee_logo.18b2dbef194037cee42f.png",
     "index.html": "/IEEE-knowledge-quiz-game/index.html",
-    "main.e6450915.css.map": "/IEEE-knowledge-quiz-game/static/css/main.e6450915.css.map",
-    "main.022a9ee5.js.map": "/IEEE-knowledge-quiz-game/static/js/main.022a9ee5.js.map",
+    "main.cbc03bba.css.map": "/IEEE-knowledge-quiz-game/static/css/main.cbc03bba.css.map",
+    "main.1b742635.js.map": "/IEEE-knowledge-quiz-game/static/js/main.1b742635.js.map",
     "453.0df881eb.chunk.js.map": "/IEEE-knowledge-quiz-game/static/js/453.0df881eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6450915.css",
-    "static/js/main.022a9ee5.js"
+    "static/css/main.cbc03bba.css",
+    "static/js/main.1b742635.js"
   ]
 }
