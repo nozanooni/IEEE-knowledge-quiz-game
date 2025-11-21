@@ -113,3 +113,16 @@
     font-style: italic;
     font-size: 0.9em;
 }
+/* src/App.css */
+
+/* ... (Existing styles) */
+
+/* NEW: Logo Styling */
+.logo-header {
+    width: 150px; /* Adjust this size as needed */
+    height: auto;
+    margin-bottom: 20px;
+    display: block; /* Ensures it takes its own line */
+    margin-left: auto;
+    margin-right: auto;
+}

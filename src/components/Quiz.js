@@ -5,6 +5,8 @@ import useWindowSize from 'react-use/lib/useWindowSize'; //  Import for screen s
 import quizData from '../data/quizData';
 import Question from './Question';
 import Confetti from 'react-confetti'; // Import the Confetti component
+import IEEELogo from '.ieee_logo.png';
+
 
 const Quiz = () => {
     // State to manage quiz flow
@@ -73,7 +75,9 @@ const Quiz = () => {
     }
     
     return (
+        
         <div className="quiz-page-content">
+            <img src={IEEELogo} alt="IEEE KAU Student Branch Logo" className="logo-header" />
             <h1 className="header-title"> IEEE Club Knowledge Quiz!</h1>
             <h2 className ="header-subtitle">Test your knowledge about the KAU IEEE Student Branch!</h2>
             <p className="score-display">Question {currentQuestionIndex + 1} of {quizData.length} | Score: {score}</p>
