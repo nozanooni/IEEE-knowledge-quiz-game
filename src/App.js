@@ -9,6 +9,9 @@ function App() {
       <Quiz />
       <footer>
         <p>Built by Shahenaz Abushanab </p>
+        <p >
+            All questions and facts are sourced directly from the IEEE KAU Student Branch Booklet.
+            </p>
       </footer>
     </div>
   );

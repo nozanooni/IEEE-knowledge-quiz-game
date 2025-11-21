@@ -1,11 +1,36 @@
 // src/components/Quiz.js
+// Hi IEEE Tech Team! I've created a quiz page about the KAU IEEE Student Branch using React!
 
+/*
+Requirements Checklist :)
+1) At least two React components:
+I  used three distinct components: Quiz.js (Main Logic/State), Question.js (Reusable UI for questions/options), and App.js (Overall Container)
+
+2) At least one interactive feature :
+I have  created several interactive features, including button clicks for selecting answers, submission (event handling), and a state-driven display of results and rationale or explanations after each question
+
+3) Simple styling (Cairo font, blue-and-white theme) 
+I implemented the Cairo font via CSS and used the official IEEE blue (#006699) and white theme throughout the design + i added the logo at the top for branding
+
+4) Clear use of React components and state :
+I used clear logic and states (currentQuestionIndex, score, isSubmitted) is managed in Quiz.js and passed down as props to the reusable Question.js component
+
+5) Reusable components :
+The Question.js component is reused for every single question in the quiz, making your code efficient and clean
+
+6) State and event handling: 
+ Functions like handleSubmitAnswer and handleNextQuestion demonstrate effective event handling, which updates the application state (score, isSubmitted)
+
+And I successfully uploaded and deployedon Github pages!
+Its deployed on the site to GitHub Pages (https://nozanooni.github.io/IEEE-knowledge-quiz-game/) 
+
+*/
 import React, { useState } from 'react';
-import useWindowSize from 'react-use/lib/useWindowSize'; //  Import for screen size
 import quizData from '../data/quizData';
 import Question from './Question';
-import Confetti from 'react-confetti'; // Import the Confetti component
-import IEEELogo from '.ieee_logo.png';
+import IEEELogo from '../assets/ieee_logo.png'; // Import the IEEE logo image
+import Confetti from 'react-confetti';
+import useWindowSize from 'react-use/lib/useWindowSize'; // Hook to get window dimensions for confetti
 
 
 const Quiz = () => {
@@ -109,6 +134,7 @@ const Quiz = () => {
                     </button>
                 )}
             </div>
+            
         </div>
         
     );
